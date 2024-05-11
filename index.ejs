@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <div id="File"  class="menu-options">File</div>
+        <div id="Home" class="menu-options">Home</div>
+    </div>
+
+    <div class="sub-menu">
+        <div class="File-options sub-menu-options selected">
+            <div id="New" class="sub-file-options">New</div>
+            <div id="Open" class="sub-file-options">Open</div>
+            <input id="Save" type="file" class="sub-file-options"></div>
+        </div>
+        <div class="Home-options sub-menu-options">
+            <div class="sub-home-options"> Home </div>
+            <div class="sub-home-options"> Options </div>
+
+        </div>
+    </div>
+
+    <div class="formula-container">Formula Bar
+        <input type="text" id="address-container">
+        <input type="text" id="formula-container">
+    </div>
+
+    <div class="cell-container">
+        <div class="top-left-box"></div>
+        <div class="left-col">
+            <% for(let i=1;i<=rows;i++){ %>
+                <div class="cell">
+                    <%=i%>
+                </div>
+            <%}%>
+        </div>
+        <div class="top-row">
+            <% for(let i=0;i<cols;i++){ %>
+                <div class="cell">
+                    <%= String.fromCharCode(65+i) %>
+                </div>
+            <%}%>
+        </div>
+        <div class="grid">
+            <% for(let i=1;i<=rows;i++ ){ %>
+                <div class="row">
+                    <% for(let j=0;j<cols;j++){ %>
+                        <div class="cell" contenteditable="true" row-id=<%=i%> col-id=<%=j%> >
+                            <%=i +" "+ String.fromCharCode(j+65) %>
+                        </div>
+                    <% } %>
+                </div>
+            <% } %>
+        </div> 
+        
+    </div>
+
+    <div class="sheets">Sheets</div> 
+    <script src="index.js"></script>
+</body>
+</html>

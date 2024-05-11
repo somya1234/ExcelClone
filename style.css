@@ -1,0 +1,100 @@
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* color: gray; */
+}
+.menu{
+    height: 25px;
+    border: 1px solid red;
+}
+.menu-options{
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.sub-menu{
+    height: 60px;
+    border: 1px solid blue;
+}
+.selected .sub-file-options{
+    display: inline;
+    padding-left:20px ;
+}
+.selected .sub-home-options{
+    display: inline-block;
+    padding-left: 20px;
+}
+.sub-file-options{
+    display: none;
+}
+.sub-home-options{
+    display: none;
+}
+
+.formula-container{
+    height: 30px;
+    border: 1px solid green;
+    padding: 1px;
+}
+
+.cell-container{
+    height: calc(100vh - 135px);
+    /* border: 1px solid orange; */
+    overflow: auto;
+    position: relative;
+}
+.top-left-box{
+    width: 30px;
+    height: 30px;
+    border: 1px solid ;
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+}
+.top-row{
+    position: absolute;
+    left: 30px;
+    display: flex;
+}
+.top-row .cell{
+    width: 70px;
+    height: 30px;
+    border: 1px solid;
+    background-color: lightblue;
+    text-align: center;
+}
+.left-col{
+    position: absolute;
+    top: 30px;
+}
+.left-col>.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+.grid{ 
+    /* display: block; */
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.row{
+    display: flex;
+    /* //if we do display inline on cell, then , all elements will not come in 1 line(only till size of parent) */
+}
+.row>.cell{
+    min-width: 70px;
+    min-height: 30px;
+    max-width: 70px;
+    border: 1px solid;
+    text-align: center;
+}
+.sheets{
+    height: 20px;
+    border: 1px solid red;
+}

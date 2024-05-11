@@ -1,0 +1,27 @@
+{
+  "name": "Excel-Clone",
+  "version": "1.0.0",
+  "description": "Installations :-  1. npm init -y 2. npm install electron //For Linux Users, write command sudo npm install electron 3. npm install jquery",
+  "main": "main.js",
+  "dependencies": {
+    "ejs-electron": "^2.0.3",
+    "electron": "^9.1.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somya1234/Excel-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somya1234/Excel-Clone/issues"
+  },
+  "homepage": "https://github.com/somya1234/Excel-Clone#readme"
+}
